@@ -1,7 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #fafafa;
-  color: #333;
-  margin: 33px; }
+  background-color: #272933;
+  color: #FCF8F6;
+  font-family: 'Gotham Ultra', sans-serif;
+  margin: 20px 160px; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -14,14 +20,15 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000; }
+  color: #FCF8F6; }
 
 a:visited {
-  color: #666; }
+  color: #FCF8F6; }
 
 a:hover {
-  color: #fff;
-  background-color: #000; }
+  color: #CD9777;
+  text-decoration: underline;
+}
 
 th {
   padding-bottom: 5px; }

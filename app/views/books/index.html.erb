@@ -5,11 +5,11 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Author</th>
+      <th>Titre</th>
+      <th>Auteur</th>
       <th>Genre</th>
-      <th>Resume</th>
-      <th>Cover</th>
+      <th>Résumé</th>
+      <th>Couverture</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,7 +21,7 @@
         <td><%= book.author %></td>
         <td><%= book.genre %></td>
         <td><%= book.resume %></td>
-        <td><%= book.cover %></td>
+        <td><img src="<%=book.cover%>"></td>
         <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
