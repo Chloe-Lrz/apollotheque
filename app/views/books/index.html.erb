@@ -1,9 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Books</h1>
+<div class=firstdiv_index>
+  <h1>L'Apollothèque</h1>
+  <h2>Ta nouvelle bibliothèque en ligne</h2>
+</div>
 
-<table>
-  <thead>
+<h3>Nos livres</h3>
+
+  <div class="tableau_index">
+    <% @books.each do |book| %>
+      <div class="iteration_index">
+          <%= link_to book do%>
+            <img src="<%=book.cover%>" class="image_index">
+            <p><%= book.title %></p>
+          <% end %>
+      </div>
+    <% end %>
+  </div>
+
+<!-- <table>
+ <thead>
     <tr>
       <th>Titre</th>
       <th>Auteur</th>
@@ -14,22 +30,26 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody class="tableau_index">
     <% @books.each do |book| %>
-      <tr>
-        <td><%= book.title %></td>
+      <tr class="iteration_index">
+        <td>
+          <%= link_to book do%>
+            <img src="<%=book.cover%>" class="image_index">
+            <p><%= book.title %></p>
+          <% end %>
+        </td>
+
         <td><%= book.author %></td>
         <td><%= book.genre %></td>
         <td><%= book.resume %></td>
         <td><img src="<%=book.cover%>"></td>
-        <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Show', book %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table>-->
 
 <br>
-
-<%= link_to 'New Book', new_book_path %>
