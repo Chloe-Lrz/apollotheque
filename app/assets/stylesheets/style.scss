@@ -179,3 +179,34 @@ label {
   background-color: #CD9777;
   color: #272933;
 }
+
+.testlien input{
+  background-color: #272933;
+  border: 3px solid #CD9777;
+  color: #CD9777;
+  padding: 0.2% 1%;
+  border-radius: 15%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.testlien input:hover{
+  transition: 0.5s;
+  background-color: #CD9777;
+  color: #272933;
+}
+
+.field input{
+  width: 50%;
+  min-width: 200px;
+}
+
+.field textarea{
+  width: 50%;
+  min-width: 200px;
+}
+
+.form{
+  margin-bottom: 3%;
+}
