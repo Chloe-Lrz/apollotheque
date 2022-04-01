@@ -30,8 +30,9 @@ h1 {
 }
 
 h2{
-  font-family: 'Gotham Bold', sans-serif;
+  font-family: 'Gotham', sans-serif;
   font-size: 32px;
+  font-weight: 700;
 }
 
 h3, a, button {
@@ -116,8 +117,8 @@ label {
 }
 
 .image_index{
-  width:170px;
-  height:200px;
+  width:auto;
+  height:220px;
   border-radius: 15%;
 }
 
@@ -127,11 +128,9 @@ label {
 }
 
 .iteration_index{
-  display: inline-block;
+  display: inline;
   text-align:left;
   margin: 2% 5%;
-}
-
-table {
-  padding: 100%;
+  //justify-content:space-between !important;
+  //align-items:center;
 }
