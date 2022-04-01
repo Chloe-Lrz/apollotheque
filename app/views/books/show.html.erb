@@ -42,8 +42,10 @@
   </div>
 </div>
 
-<div class="testlien">
-  <%= link_to 'Modifier', edit_book_path(@book) %>
+
+<div class="buttonShow">
+  <%= link_to 'Modifier', edit_book_path(@book), class: 'btn btn-outline-light' %>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <%= link_to "Retour", books_path %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= link_to "Retour", books_path, class: 'btn btn-outline-light'%>
 </div>

@@ -166,36 +166,44 @@ label {
   width: auto;
 }
 
-.testlien a{
+.buttonShow{
+  margin-left:40px;
+}
+
+
+
+
+
+
+
+//MODIF BOOTSTRAP
+
+.btn-outline-light{
   background-color: #272933;
   border: 3px solid #CD9777;
-  color: #CD9777;
+  color: #CD9777 !important;
   padding: 0.5% 1%;
-  border-radius: 15%;
-}
-
-.testlien a:hover{
-  transition: 0.5s;
-  background-color: #CD9777;
-  color: #272933;
-}
-
-.testlien input{
-  background-color: #272933;
-  border: 3px solid #CD9777;
-  color: #CD9777;
-  padding: 0.2% 1%;
-  border-radius: 15%;
+  border-radius: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 24px;
 }
 
-.testlien input:hover{
+.btn-outline-light:hover{
   transition: 0.5s;
   background-color: #CD9777;
-  color: #272933;
+  border: 3px solid #CD9777 !important;
+  color: #272933 !important;
+  text-decoration: underline;
 }
+
+
+
+
+
+
+
+//CSS FORM
 
 .field input{
   width: 50%;
