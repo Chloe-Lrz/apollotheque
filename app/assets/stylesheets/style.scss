@@ -152,13 +152,30 @@ label {
 .contentShow{
   display: flex;
   justify-content:space-between;
+  margin-bottom: 2%;
 }
 
 .part1show p{
   margin-left: 40px;
+  margin-right: 40%;
+  line-height: 25px;
 }
 
 .part2show img{
   height: 430px;
   width: auto;
+}
+
+.testlien a{
+  background-color: #272933;
+  border: 3px solid #CD9777;
+  color: #CD9777;
+  padding: 0.5% 1%;
+  border-radius: 15%;
+}
+
+.testlien a:hover{
+  transition: 0.5s;
+  background-color: #CD9777;
+  color: #272933;
 }
