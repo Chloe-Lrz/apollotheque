@@ -100,6 +100,20 @@ div.actions {
 label {
   display: block; }
 
+.firstdiv{
+  margin: 170px 0 170px 30%;
+}
+
+.firstdiv h2 {
+  padding-left: 40px;
+}
+
+.image {
+  position: absolute;
+  opacity: 25%;
+  margin: 6.5% 0 10% 35%;
+}
+
 
 
 
@@ -107,14 +121,6 @@ label {
 
 
 /* PARTIE CSS INDEX */
-
-.firstdiv_index{
-  margin: 170px 0 170px 30%;
-}
-
-.firstdiv_index h2 {
-  padding-left: 40px;
-}
 
 .image_index{
   width:auto;
@@ -125,12 +131,34 @@ label {
 .tableau_index{
   display: flex;
   flex-wrap: wrap;
+  justify-content:space-between !important;
 }
 
 .iteration_index{
   display: inline;
   text-align:left;
-  margin: 2% 5%;
-  //justify-content:space-between !important;
-  //align-items:center;
+  padding-bottom: 2%;
+  //margin: 2% 5%;
+}
+
+
+
+
+
+
+
+// CSS SHOW
+
+.contentShow{
+  display: flex;
+  justify-content:space-between;
+}
+
+.part1show p{
+  margin-left: 40px;
+}
+
+.part2show img{
+  height: 430px;
+  width: auto;
 }

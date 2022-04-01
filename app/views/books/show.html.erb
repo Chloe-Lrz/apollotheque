@@ -1,29 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
+<div class=image>
+<%= image_tag 'couronne.png' %>
+</div>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+<div class="firstdiv">
 
-<p>
-  <strong>Genre:</strong>
-  <%= @book.genre %>
-</p>
+  <h1>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </h1>
 
-<p>
-  <strong>Resume:</strong>
-  <%= @book.resume %>
-</p>
+  <h2>
+    <strong>Author:</strong>
+    <%= @book.author %>
+  </h2>
+</div>
 
-<p>
-  <strong>Cover:</strong>
-  <%= @book.cover %>
-</p>
+<div class="contentShow">
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
+  <div class="part1show">
+    <h3>
+      <strong>Genre:</strong>
+    </h3>
+    <p>
+      <%= @book.genre %>
+    </p>
+
+
+    <h3>
+      <strong>Resume:</strong>
+    </h3>
+    <p>
+      <%= @book.resume %>
+    </p>
+
+  </div>
+
+  <div class="part2show">
+    <img src="<%=@book.cover%>" class="image_index">
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_book_path(@book) %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <%= link_to 'Back', books_path %>

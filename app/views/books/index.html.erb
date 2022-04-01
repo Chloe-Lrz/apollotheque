@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<div class=firstdiv_index>
+<div class=image>
+<%= image_tag 'couronne.png' %>
+</div>
+
+<div class=firstdiv>
   <h1>L'Apollothèque</h1>
   <h2>Ta nouvelle bibliothèque en ligne</h2>
 </div>
@@ -17,39 +21,5 @@
       </div>
     <% end %>
   </div>
-
-<!-- <table>
- <thead>
-    <tr>
-      <th>Titre</th>
-      <th>Auteur</th>
-      <th>Genre</th>
-      <th>Résumé</th>
-      <th>Couverture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody class="tableau_index">
-    <% @books.each do |book| %>
-      <tr class="iteration_index">
-        <td>
-          <%= link_to book do%>
-            <img src="<%=book.cover%>" class="image_index">
-            <p><%= book.title %></p>
-          <% end %>
-        </td>
-
-        <td><%= book.author %></td>
-        <td><%= book.genre %></td>
-        <td><%= book.resume %></td>
-        <td><img src="<%=book.cover%>"></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>-->
 
 <br>
