@@ -114,6 +114,50 @@ label {
   margin: 6.5% 0 10% 35%;
 }
 
+.lien_user{
+  text-decoration: underline;
+  color: #E6B8A2;
+  font-size: 16px;
+  padding: 0.5%;
+  margin-left: 2%;
+}
+
+.form-actions{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 2% 0 4% 0;
+}
+
+.form-input{
+  display:inline;
+  align-items: flex-end;
+  margin: 2% 0;
+}
+
+.password, .user_password, .user_email, .email{
+  width: 50%;
+  min-width: 200px;
+  margin-bottom: 1%;
+}
+
+.password, .email{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.boolean{
+  display:flex;
+  margin-right: 1%;
+}
+
+.retour{
+  margin-top: 3%;
+}
+
+
+
 
 
 

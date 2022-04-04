@@ -15,30 +15,32 @@
 
   </head>
 
-  <header class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/books">
-        <%= image_tag 'logotheque.png' %>
-      </a>
-
-      <span style="color: #fcf6f8 !important">
-        <%= link_to "Ajouter un livre", new_book_path %>
-      </span>
-    </div>
-  </header>
-
   <body>
+    <header class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/books">
+          <%= image_tag 'logotheque.png' %>
+        </a>
+
+        <span style="color: #fcf6f8 !important">
+          <%= link_to "Ajouter un livre", new_book_path %>
+        </span>
+
+        <% if user_signed_in? %>
+            <%= link_to current_user.email, edit_user_registration_path %>
+            <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
+        <% else %>
+            <%= link_to "Connexion", new_user_session_path %>
+            <%= link_to "Inscription", new_user_registration_path %>
+        <% end %>
+      </div>
+    </header>
+
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
   </body>
 
-
 </html>
-
-    <!-- <div>
-      <%= image_tag 'logotheque.png' %>
-          <%= link_to 'Ajouter un livre', new_book_path%> style="color: #fcf6f8"
-    </div>
-
-    <div>
-      <%= link_to 'New Book', new_book_path %>
-    </div> -->

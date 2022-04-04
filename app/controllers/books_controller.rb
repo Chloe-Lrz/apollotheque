@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  skip_before_action :authenticate_user!, only: %i[index show]
+
   before_action :set_book, only: %i[ show edit update destroy ]
 
   # GET /books or /books.json
@@ -21,6 +23,8 @@ class BooksController < ApplicationController
 
   # POST /books or /books.json
   def create
+
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
     @book = Book.new(book_params)
 
     respond_to do |format|

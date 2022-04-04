@@ -1,0 +1,24 @@
+<div class=image>
+<%= image_tag 'couronne.png' %>
+</div>
+
+<div class=firstdiv>
+  <h1>Mot de passe</h1>
+  <h2>oublié?</h2>
+</div>
+
+<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" } %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Réinitialiser", class: 'btn btn-outline-light' %>
+    <%= render "devise/shared/links" %>
+  </div>
+<% end %>
