@@ -24,7 +24,6 @@ class BooksController < ApplicationController
   # POST /books or /books.json
   def create
 
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
     @book = Book.new(book_params)
 
     respond_to do |format|
